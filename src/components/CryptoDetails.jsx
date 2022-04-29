@@ -7,8 +7,6 @@ import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCi
 
 import { useGetCryptoDetailsQuery, useGetCryptoHistoryQuery } from '../services/cryptoApi';
 import Loader from './Loader';
-import LineChart from './LineChart';
-
 const { Title, Text } = Typography;
 const { Option } = Select;
 
@@ -51,13 +49,6 @@ const CryptoDetails = () => {
           <p>
             {cryptoDetails?.name} live price in US dollars(INR to be added soon). View value statistics, market cap and supply.
           </p>
-          {/* <Select 
-            defaultValue="7d"
-            className="select-timeperiod"
-            placeholder="Select Time Period"
-            onChange={(value) => setTimeperiod(value)}>
-               {time.map((date) => <Option key={date}>{date}</Option>)}
-          </Select> */}
           <Col className="stats-container">
         <Col className="coin-value-statistics">
           <Col className="coin-value-statistics-heading">
